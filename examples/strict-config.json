@@ -1,0 +1,35 @@
+{
+  "wcagLevel": "AAA",
+  "checks": {
+    "enabled": [
+      "alt-text",
+      "color-contrast",
+      "heading-structure",
+      "aria-attributes",
+      "form-labels",
+      "focus-indicators",
+      "keyboard-navigation",
+      "landmark-regions"
+    ],
+    "disabled": []
+  },
+  "thresholds": {
+    "colorContrastRatio": 7.0,
+    "maxHeadingJump": 1
+  },
+  "output": {
+    "format": ["html", "json"],
+    "outputDir": "./accessibility-audit",
+    "verbose": true
+  },
+  "browser": {
+    "headless": true,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "userAgent": "AccessibilityBot/1.0"
+  },
+  "timeout": 45000,
+  "concurrent": 2
+}

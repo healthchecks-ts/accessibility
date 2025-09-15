@@ -1,0 +1,31 @@
+{
+  "wcagLevel": "AA",
+  "checks": {
+    "enabled": [
+      "alt-text",
+      "color-contrast",
+      "heading-structure",
+      "aria-attributes",
+      "form-labels"
+    ],
+    "disabled": []
+  },
+  "thresholds": {
+    "colorContrastRatio": 4.5,
+    "maxHeadingJump": 1
+  },
+  "output": {
+    "format": ["console", "html", "json"],
+    "outputDir": "./accessibility-reports",
+    "verbose": false
+  },
+  "browser": {
+    "headless": true,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "timeout": 30000,
+  "concurrent": 3
+}

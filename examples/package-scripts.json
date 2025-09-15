@@ -1,0 +1,16 @@
+{
+  "name": "my-website-project",
+  "version": "1.0.0",
+  "scripts": {
+    "accessibility:check": "accessibility-check https://my-website.com",
+    "accessibility:full": "accessibility-check https://my-website.com --format html json console --level AAA",
+    "accessibility:dev": "accessibility-check http://localhost:3000 --headless false",
+    "accessibility:ci": "accessibility-check https://staging.my-website.com --format json --config accessibility.config.json",
+    "accessibility:multi": "accessibility-check https://my-website.com https://my-website.com/about https://my-website.com/contact --concurrent 3",
+    "test:accessibility": "accessibility-check http://localhost:8080 --format console",
+    "audit:accessibility": "accessibility-check https://my-website.com --format html --output ./audit-reports --verbose"
+  },
+  "devDependencies": {
+    "@healthchecks-ts/accessibility": "^1.0.0"
+  }
+}

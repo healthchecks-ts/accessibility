@@ -1,0 +1,34 @@
+{
+  "wcagLevel": "A",
+  "checks": {
+    "enabled": [
+      "alt-text",
+      "heading-structure",
+      "form-labels"
+    ],
+    "disabled": [
+      "color-contrast",
+      "aria-attributes",
+      "focus-indicators",
+      "keyboard-navigation",
+      "landmark-regions"
+    ]
+  },
+  "thresholds": {
+    "colorContrastRatio": 3.0,
+    "maxHeadingJump": 2
+  },
+  "output": {
+    "format": ["console"],
+    "verbose": false
+  },
+  "browser": {
+    "headless": true,
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    }
+  },
+  "timeout": 15000,
+  "concurrent": 5
+}
